@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Signals</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Binary Signals Website</https://qxbroker.com/en/sign-up?gad_source=1&gclid=Cj0KCQiA2KitBhCIARIsAPPMEhLNhw_UAypEA4TwWimJBa44d7cFGldAUe4aCE61HYlrvjir0d5GuhAaAsjzEALw_wcB&lid=550150>
+    </header>
+
+    <main>
+        <p>Welcome to our binary signals platform. Check the signals below:</p>
+        <ul>
+            <li>Signal 1: 0<USD/BRL>
+            <li>Signal 2: 1<USD/INR>
+            <!-- Add more signals as needed -->
+        </ul>
+
+        <button onclick="generatePDF()">Generate PDF</button>
+    </main>
+
+    <footer>
+        <p>© 2024 Binary Signals. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function generatePDF() {
+            const pdf = new jsPDF();
+            pdf.text('Binary Signals Report', 20, 20);
+            pdf.text('Signal 1: 0', 20, 30);
+            pdf.text('Signal 2: 1', 20, 40);
+            // Add more signals or content as needed
+            pdf.save('binary_signals_report.pdf');
+        }
+    </script>
+</body>
+</html>
